@@ -3,18 +3,27 @@ package com.itheima.controller;
 
 import com.itheima.domain.Product;
 import com.itheima.service.IProductService;
+import com.itheima.utils.DateStringEditor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.WebDataBinder;
+import org.springframework.web.bind.annotation.InitBinder;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import java.util.Date;
 import java.util.List;
 
 @Controller
 @RequestMapping("/product")
 public class ProductController {
+
+    @InitBinder
+    public void initBinder(WebDataBinder binder){
+        binder.registerCustomEditor(Date.class, new DateStringEditor());
+    }
 
     @Autowired
     private IProductService iProductService;
