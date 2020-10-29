@@ -20,84 +20,13 @@
 
 
 <!-- Tell the browser to be responsive to screen width -->
-<meta
-	content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"
-	name="viewport">
-<!-- Bootstrap 3.3.6 -->
-<!-- Font Awesome -->
-<!-- Ionicons -->
-<!-- iCheck -->
-<!-- Morris chart -->
-<!-- jvectormap -->
-<!-- Date Picker -->
-<!-- Daterange picker -->
-<!-- Bootstrap time Picker -->
-<!--<link rel="stylesheet" href="${pageContext.request.contextPath}/${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/timepicker/bootstrap-timepicker.min.css">-->
-<!-- bootstrap wysihtml5 - text editor -->
-<!--数据表格-->
-<!-- 表格树 -->
-<!-- select2 -->
-<!-- Bootstrap Color Picker -->
-<!-- bootstrap wysihtml5 - text editor -->
-<!--bootstrap-markdown-->
-<!-- Theme style -->
-<!-- AdminLTE Skins. Choose a skin from the css/skins
-       folder instead of downloading all of them to reduce the load. -->
-<!-- Ion Slider -->
-<!-- ion slider Nice -->
-<!-- bootstrap slider -->
-<!-- bootstrap-datetimepicker -->
+<meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport">
 
-<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-<!--[if lt IE 9]>
+
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
 
 
-
-
-
-
-
-
-<!-- jQuery 2.2.3 -->
-<!-- jQuery UI 1.11.4 -->
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<!-- Bootstrap 3.3.6 -->
-<!-- Morris.js charts -->
-<!-- Sparkline -->
-<!-- jvectormap -->
-<!-- jQuery Knob Chart -->
-<!-- daterangepicker -->
-<!-- datepicker -->
-<!-- Bootstrap WYSIHTML5 -->
-<!-- Slimscroll -->
-<!-- FastClick -->
-<!-- iCheck -->
-<!-- AdminLTE App -->
-<!-- 表格树 -->
-<!-- select2 -->
-<!-- bootstrap color picker -->
-<!-- bootstrap time picker -->
-<!--<script src="${pageContext.request.contextPath}/${pageContext.request.contextPath}/${pageContext.request.contextPath}/plugins/timepicker/bootstrap-timepicker.min.js"></script>-->
-<!-- Bootstrap WYSIHTML5 -->
-<!--bootstrap-markdown-->
-<!-- CK Editor -->
-<!-- InputMask -->
-<!-- DataTables -->
-<!-- ChartJS 1.0.1 -->
-<!-- FLOT CHARTS -->
-<!-- FLOT RESIZE PLUGIN - allows the chart to redraw when the window is resized -->
-<!-- FLOT PIE PLUGIN - also used to draw donut charts -->
-<!-- FLOT CATEGORIES PLUGIN - Used to draw bar charts -->
-<!-- jQuery Knob -->
-<!-- Sparkline -->
-<!-- Morris.js charts -->
-<!-- Ion Slider -->
-<!-- Bootstrap slider -->
-<!-- bootstrap-datetimepicker -->
 <!-- 页面meta /-->
 
 <link rel="stylesheet"
@@ -244,7 +173,7 @@
 								<tbody>
 
 
-									<c:forEach items="${productList}" var="product">
+									<c:forEach items="${pageInfo.list}" var="product">
 
 										<tr>
 											<td><input name="ids" type="checkbox"></td>
@@ -319,7 +248,7 @@
 					<div class="box-footer">
 						<div class="pull-left">
 							<div class="form-group form-inline">
-								总共2 页，共14 条数据。 每页 <select class="form-control">
+								总共${pageInfo.pages}页，共${pageInfo.total}条数据。 每页 <select id="changePageSize" class="form-control" onchange="changePageSize()">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
@@ -331,15 +260,15 @@
 
 						<div class="box-tools pull-right">
 							<ul class="pagination">
-								<li><a href="#" aria-label="Previous">首页</a></li>
-								<li><a href="#">上一页</a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
-								<li><a href="#">5</a></li>
-								<li><a href="#">下一页</a></li>
-								<li><a href="#" aria-label="Next">尾页</a></li>
+								<li><a href="${pageContext.request.contextPath}/product/findAll.do?page=1&size=${pageInfo.pageSize}" aria-label="Previous">首页</a></li>
+								<li><a href="${pageContext.request.contextPath}/product/findAll.do?page=${pageInfo.pageNum-1}&size=${pageInfo.pageSize}">上一页</a></li>
+								<c:forEach begin="1" end="${pageInfo.pages}" var="pageNum">
+									<li><a href="${pageContext.request.contextPath}/product/findAll.do?page=${pageNum}&size=${pageInfo.pageSize}">${pageNum}</a></li>
+								</c:forEach>
+								<li><a href="${pageContext.request.contextPath}/product/findAll.do?page=${pageInfo.pageNum+1}&size=${pageInfo.pageSize}">下一页</a></li>
+								<li>
+									<a href="${pageContext.request.contextPath}/product/findAll.do?page=${pageInfo.pages}&size=${pageInfo.pageSize}">尾页</a>
+								</li>
 							</ul>
 						</div>
 
@@ -459,6 +388,13 @@
 	<script
 		src="${pageContext.request.contextPath}/plugins/bootstrap-datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js"></script>
 	<script>
+		function changePageSize() {
+			//获取下拉框的值
+			var pageSize = $("#changePageSize").val();
+
+			//向服务器发送请求，改变没页显示条数
+			location.href = "${pageContext.request.contextPath}/product/findAll.do?page=1&size="+ pageSize;
+		}
 		$(document).ready(function() {
 			// 选择框
 			$(".select2").select2();

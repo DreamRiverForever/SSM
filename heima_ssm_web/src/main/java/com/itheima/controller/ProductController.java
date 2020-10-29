@@ -1,16 +1,15 @@
 package com.itheima.controller;
 
 
+import com.github.pagehelper.PageInfo;
 import com.itheima.domain.Product;
 import com.itheima.service.IProductService;
 import com.itheima.utils.DateStringEditor;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.WebDataBinder;
-import org.springframework.web.bind.annotation.InitBinder;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Date;
@@ -29,12 +28,13 @@ public class ProductController {
     private IProductService iProductService;
     //查询所有产品
     @RequestMapping("/findAll.do")
-    public ModelAndView finaAll() throws Exception{
+    public ModelAndView finaAll(@RequestParam(name = "page",required = true,defaultValue = "1")int page, @RequestParam(name = "size",required = true,defaultValue = "4")int size) throws Exception{
         ModelAndView modelAndView = new ModelAndView();
-        List<Product> products = iProductService.findAll();
-        modelAndView.addObject("productList",products);
+        List<Product> products = iProductService.findAll(page,size);
+        PageInfo pageInfo = new PageInfo(products);
+        modelAndView.addObject("pageInfo",pageInfo);
         //System.out.println(products);
-        modelAndView.setViewName("product-list1");
+        modelAndView.setViewName("product-list");
         return modelAndView;
     }
 

@@ -1,10 +1,10 @@
 package com.itheima.dao;
 
 import com.itheima.domain.UserInfo;
-import org.apache.ibatis.annotations.Many;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
+import org.springframework.security.core.userdetails.User;
+
+import java.util.List;
 
 public interface IUserDao {
 
@@ -19,4 +19,10 @@ public interface IUserDao {
             @Result(property = "roles",column = "id",javaType = java.util.List.class,many = @Many(select = "com.itheima.dao.IRoleDao.findRoleByUserId"))
     })
     public UserInfo findByUsername(String userName);
+
+    @Select("select * from users")
+    List<UserInfo> findAll();
+
+    @Insert("insert into users(email,username,password,phoneNum,status) values(#{email},#{username},#{password},#{phoneNum},#{status})")
+    void save(UserInfo info);
 }
