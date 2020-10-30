@@ -6,49 +6,42 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fa0d5986-b2b9-47f5-addc-c04816e4becf" name="Default Changelist" comment=" 添加了角色与用户查询dao接口">
-      <change afterPath="$PROJECT_DIR$/heima_ssm_utils/src/main/java/com/itheima/utils/BCryptPasswordEncoderUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_utils/target/classes/com/itheima/utils/BCryptPasswordEncoderUtils.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/user-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/user-list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/user-show.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/user-show1.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/target/classes/com/itheima/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web.war" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/com/itheima/controller/UserController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/user-add.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/user-list.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/user-show.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/user-show1.jsp" afterDir="false" />
+    <list default="true" id="fa0d5986-b2b9-47f5-addc-c04816e4becf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/heima_ssm_dao/src/main/java/com/itheima/dao/IPermissionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/IPermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/IRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/Impl/PermissionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/Impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/PermissionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/RoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/permission-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/permission-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/permission-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/role-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/role-list.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/role-permission-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/role-show.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/user-role-add.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_dao/src/main/java/com/itheima/dao/IRoleDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_dao/src/main/java/com/itheima/dao/IRoleDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_dao/src/main/java/com/itheima/dao/IUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_dao/src/main/java/com/itheima/dao/IUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_dao/target/classes/com/itheima/dao/IRoleDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_dao/target/classes/com/itheima/dao/IRoleDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_dao/target/classes/com/itheima/dao/IUserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_dao/target/classes/com/itheima/dao/IUserDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_domain/src/main/java/com/itheima/domain/UserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_domain/src/main/java/com/itheima/domain/UserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_domain/target/classes/com/itheima/domain/UserInfo.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_domain/target/classes/com/itheima/domain/UserInfo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/IProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/Impl/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/Impl/ProductServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/src/main/java/com/itheima/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/IProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/IProductService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/IUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/IUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/Impl/ProductServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/Impl/ProductServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/Impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_service/target/classes/com/itheima/service/Impl/UserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/OrdersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/OrdersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/src/main/resources/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/resources/spring-security.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/aside.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/aside.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/product-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages/product-list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/classes/com/itheima/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/classes/com/itheima/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/classes/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/classes/spring-security.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/com/itheima/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/com/itheima/controller/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/java/com/itheima/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_web/src/main/resources/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/src/main/resources/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/classes/com/itheima/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/classes/com/itheima/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/classes/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web.war" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/com/itheima/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/com/itheima/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/classes/spring-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_dao-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_dao-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_domain-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_service-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_service-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_utils-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/WEB-INF/lib/heima_ssm_utils-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/aside.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/aside.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/product-list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/heima_ssm_web/target/heima_ssm_web/pages/product-list.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +54,7 @@
         <option value="spring-beans.schema" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -109,7 +103,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/heima_ssm_utils/src/main/java/com/itheima/utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -117,11 +111,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages" />
+      <recent name="$PROJECT_DIR$/heima_ssm_dao/src/main/java/com/itheima/dao" />
       <recent name="$PROJECT_DIR$/heima_ssm_utils/src/main/java/com/itheima/utils" />
       <recent name="$PROJECT_DIR$/heima_ssm_web/src/main/resources" />
-      <recent name="$PROJECT_DIR$/heima_ssm_web/src/main/webapp/pages" />
       <recent name="$PROJECT_DIR$/heima_ssm_domain/src/main/java/com/itheima/domain" />
-      <recent name="$PROJECT_DIR$/heima_ssm_web/src/main/webapp" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.30">
@@ -251,7 +245,8 @@
       <workItem from="1603362477566" duration="13945000" />
       <workItem from="1603674032323" duration="12437000" />
       <workItem from="1603959961517" duration="7599000" />
-      <workItem from="1603972055353" duration="1681000" />
+      <workItem from="1603972055353" duration="1832000" />
+      <workItem from="1604046458471" duration="9509000" />
     </task>
     <task id="LOCAL-00001" summary="提交数据">
       <created>1603524811648</created>
@@ -365,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603791054365</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="实现用户查询等操作">
+      <created>1603974301775</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1603974301775</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +407,8 @@
     <MESSAGE value=" 角色与用户实体类" />
     <MESSAGE value=" 实现了spring-security的登录模块" />
     <MESSAGE value=" 添加登录页面" />
-    <option name="LAST_COMMIT_MESSAGE" value=" 添加登录页面" />
+    <MESSAGE value="实现用户查询等操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现用户查询等操作" />
   </component>
   <component name="WindowStateProjectService">
     <state x="496" y="225" key="#Project_Structure" timestamp="1603611862957">
@@ -416,14 +419,14 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="360" y="222" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1603962020077" />
-    <state x="709" y="276" key="#com.intellij.ide.util.MemberChooser" timestamp="1603973217522">
+    <state x="709" y="276" key="#com.intellij.ide.util.MemberChooser" timestamp="1604065054814">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="709" y="276" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1603973217522" />
-    <state x="315" y="137" key="CommitChangelistDialog2" timestamp="1603791054229">
+    <state x="709" y="276" key="#com.intellij.ide.util.MemberChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1604065054814" />
+    <state x="315" y="137" key="CommitChangelistDialog2" timestamp="1603974301426">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="315" y="137" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1603791054229" />
+    <state x="315" y="137" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1603974301426" />
     <state x="760" y="460" key="Github.ShareDialog" timestamp="1603524171370">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -432,77 +435,77 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="667" y="269" key="Github.UntrackedFilesDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1603524182729" />
-    <state width="1204" height="331" key="GridCell.Tab.0.bottom" timestamp="1603974242054">
+    <state width="1204" height="298" key="GridCell.Tab.0.bottom" timestamp="1604065360543">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242054" />
-    <state width="1204" height="331" key="GridCell.Tab.0.bottom/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493442" />
+    <state width="1204" height="298" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360543" />
+    <state width="1204" height="298" key="GridCell.Tab.0.bottom/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285204" />
     <state width="1204" height="207" key="GridCell.Tab.0.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926606" />
-    <state width="1204" height="331" key="GridCell.Tab.0.center" timestamp="1603974242053">
+    <state width="1204" height="298" key="GridCell.Tab.0.center" timestamp="1604065360542">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242053" />
-    <state width="1204" height="331" key="GridCell.Tab.0.center/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493441" />
+    <state width="1204" height="298" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360542" />
+    <state width="1204" height="298" key="GridCell.Tab.0.center/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285203" />
     <state width="1204" height="207" key="GridCell.Tab.0.center/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926605" />
-    <state width="1204" height="331" key="GridCell.Tab.0.left" timestamp="1603974242052">
+    <state width="1204" height="298" key="GridCell.Tab.0.left" timestamp="1604065360542">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242052" />
-    <state width="1204" height="331" key="GridCell.Tab.0.left/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493440" />
+    <state width="1204" height="298" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360542" />
+    <state width="1204" height="298" key="GridCell.Tab.0.left/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285202" />
     <state width="1204" height="207" key="GridCell.Tab.0.left/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926605" />
-    <state width="1204" height="331" key="GridCell.Tab.0.right" timestamp="1603974242053">
+    <state width="1204" height="298" key="GridCell.Tab.0.right" timestamp="1604065360543">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242053" />
-    <state width="1204" height="331" key="GridCell.Tab.0.right/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493442" />
+    <state width="1204" height="298" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360543" />
+    <state width="1204" height="298" key="GridCell.Tab.0.right/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285204" />
     <state width="1204" height="207" key="GridCell.Tab.0.right/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926606" />
-    <state width="1204" height="331" key="GridCell.Tab.1.bottom" timestamp="1603974242057">
+    <state width="1204" height="298" key="GridCell.Tab.1.bottom" timestamp="1604065360545">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242057" />
-    <state width="1204" height="331" key="GridCell.Tab.1.bottom/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493361" />
+    <state width="1204" height="298" key="GridCell.Tab.1.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360545" />
+    <state width="1204" height="298" key="GridCell.Tab.1.bottom/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285134" />
     <state width="1204" height="207" key="GridCell.Tab.1.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926491" />
-    <state width="1204" height="331" key="GridCell.Tab.1.center" timestamp="1603974242055">
+    <state width="1204" height="298" key="GridCell.Tab.1.center" timestamp="1604065360544">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242055" />
-    <state width="1204" height="331" key="GridCell.Tab.1.center/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493359" />
+    <state width="1204" height="298" key="GridCell.Tab.1.center/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360544" />
+    <state width="1204" height="298" key="GridCell.Tab.1.center/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285132" />
     <state width="1204" height="207" key="GridCell.Tab.1.center/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926490" />
-    <state width="1204" height="331" key="GridCell.Tab.1.left" timestamp="1603974242055">
+    <state width="1204" height="298" key="GridCell.Tab.1.left" timestamp="1604065360544">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242055" />
-    <state width="1204" height="331" key="GridCell.Tab.1.left/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493359" />
+    <state width="1204" height="298" key="GridCell.Tab.1.left/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360544" />
+    <state width="1204" height="298" key="GridCell.Tab.1.left/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285132" />
     <state width="1204" height="207" key="GridCell.Tab.1.left/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926489" />
-    <state width="1204" height="331" key="GridCell.Tab.1.right" timestamp="1603974242056">
+    <state width="1204" height="298" key="GridCell.Tab.1.right" timestamp="1604065360545">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242056" />
-    <state width="1204" height="331" key="GridCell.Tab.1.right/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493360" />
+    <state width="1204" height="298" key="GridCell.Tab.1.right/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360545" />
+    <state width="1204" height="298" key="GridCell.Tab.1.right/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285133" />
     <state width="1204" height="207" key="GridCell.Tab.1.right/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926490" />
-    <state width="1204" height="331" key="GridCell.Tab.2.bottom" timestamp="1603974242059">
+    <state width="1204" height="298" key="GridCell.Tab.2.bottom" timestamp="1604065360546">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.2.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242059" />
-    <state width="1204" height="331" key="GridCell.Tab.2.bottom/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493363" />
+    <state width="1204" height="298" key="GridCell.Tab.2.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360546" />
+    <state width="1204" height="298" key="GridCell.Tab.2.bottom/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285137" />
     <state width="1204" height="207" key="GridCell.Tab.2.bottom/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926492" />
-    <state width="1204" height="331" key="GridCell.Tab.2.center" timestamp="1603974242058">
+    <state width="1204" height="298" key="GridCell.Tab.2.center" timestamp="1604065360546">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.2.center/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242058" />
-    <state width="1204" height="331" key="GridCell.Tab.2.center/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493362" />
+    <state width="1204" height="298" key="GridCell.Tab.2.center/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360546" />
+    <state width="1204" height="298" key="GridCell.Tab.2.center/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285136" />
     <state width="1204" height="207" key="GridCell.Tab.2.center/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926492" />
-    <state width="1204" height="331" key="GridCell.Tab.2.left" timestamp="1603974242057">
+    <state width="1204" height="298" key="GridCell.Tab.2.left" timestamp="1604065360545">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.2.left/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242057" />
-    <state width="1204" height="331" key="GridCell.Tab.2.left/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493361" />
+    <state width="1204" height="298" key="GridCell.Tab.2.left/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360545" />
+    <state width="1204" height="298" key="GridCell.Tab.2.left/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285136" />
     <state width="1204" height="207" key="GridCell.Tab.2.left/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926491" />
-    <state width="1204" height="331" key="GridCell.Tab.2.right" timestamp="1603974242058">
+    <state width="1204" height="298" key="GridCell.Tab.2.right" timestamp="1604065360546">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state width="1204" height="331" key="GridCell.Tab.2.right/0.0.1792.1120@0.0.1792.1120" timestamp="1603974242058" />
-    <state width="1204" height="331" key="GridCell.Tab.2.right/0.23.1792.1021@0.23.1792.1021" timestamp="1603973493363" />
+    <state width="1204" height="298" key="GridCell.Tab.2.right/0.0.1792.1120@0.0.1792.1120" timestamp="1604065360546" />
+    <state width="1204" height="298" key="GridCell.Tab.2.right/0.23.1792.1021@0.23.1792.1021" timestamp="1604065285136" />
     <state width="1204" height="207" key="GridCell.Tab.2.right/0.23.1792.1022@0.23.1792.1022" timestamp="1603715926492" />
     <state width="1204" height="353" key="GridCell.Tab.3.bottom" timestamp="1603966657811">
       <screen x="0" y="0" width="1792" height="1120" />
@@ -520,10 +523,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state width="1204" height="353" key="GridCell.Tab.3.right/0.0.1792.1120@0.0.1792.1120" timestamp="1603966657809" />
-    <state x="434" y="222" key="Maven.ArtifactSearchDialog" timestamp="1603967034142">
+    <state x="434" y="222" key="Maven.ArtifactSearchDialog" timestamp="1604047062856">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="434" y="222" key="Maven.ArtifactSearchDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1603967034142" />
+    <state x="434" y="222" key="Maven.ArtifactSearchDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604047062856" />
     <state x="404" y="278" key="RollbackChangesDialog" timestamp="1603626253773">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -540,14 +543,14 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="746" y="483" key="VCS.ChangelistChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1603626076951" />
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1603791063358">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2" timestamp="1603974308566">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603791063358" />
-    <state x="573" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1603972055584">
+    <state x="496" y="300" key="Vcs.Push.Dialog.v2/0.0.1792.1120@0.0.1792.1120" timestamp="1603974308566" />
+    <state x="573" y="380" key="com.intellij.ide.util.TipDialog" timestamp="1604046460657">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="573" y="380" key="com.intellij.ide.util.TipDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1603972055584" />
+    <state x="573" y="380" key="com.intellij.ide.util.TipDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604046460657" />
     <state x="670" y="461" key="git4idea.ui.GitResetDialog" timestamp="1603626036983">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -556,10 +559,10 @@
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="273" y="257" key="new project wizard/0.0.1792.1120@0.0.1792.1120" timestamp="1603362669855" />
-    <state x="658" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1603611149625">
+    <state x="658" y="184" key="refactoring.ChangeSignatureDialog" timestamp="1604064434162">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
-    <state x="658" y="184" key="refactoring.ChangeSignatureDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1603611149625" />
+    <state x="658" y="184" key="refactoring.ChangeSignatureDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1604064434162" />
     <state x="561" y="251" width="670" height="676" key="search.everywhere.popup" timestamp="1603610964317">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
