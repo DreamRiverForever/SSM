@@ -37,7 +37,7 @@ public class RoleController {
         roleService.save(role);
         return "redirect:findAll.do";
     }
-    @RequestMapping("/findById")
+    @RequestMapping("/findById.do")
     public ModelAndView findById(String id){
         ModelAndView modelAndView = new ModelAndView();
         Role role = roleService.findById(id);
