@@ -12,6 +12,7 @@ import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.annotation.security.RolesAllowed;
 import java.util.Date;
 import java.util.List;
 
@@ -19,16 +20,12 @@ import java.util.List;
 @RequestMapping("/product")
 public class ProductController {
 
-    @InitBinder
-    public void initBinder(WebDataBinder binder){
-        binder.registerCustomEditor(Date.class, new DateStringEditor());
-    }
-
     @Autowired
     private IProductService iProductService;
     //查询所有产品
     @RequestMapping("/findAll.do")
-    public ModelAndView finaAll(@RequestParam(name = "page",required = true,defaultValue = "1")int page, @RequestParam(name = "size",required = true,defaultValue = "4")int size) throws Exception{
+    @RolesAllowed("ADMIN")
+    public ModelAndView finaAll(@RequestParam(name = "page",required = true,defaultValue = "1")Integer page, @RequestParam(name = "size",required = true,defaultValue = "4")Integer size) throws Exception{
         ModelAndView modelAndView = new ModelAndView();
         List<Product> products = iProductService.findAll(page,size);
         PageInfo pageInfo = new PageInfo(products);

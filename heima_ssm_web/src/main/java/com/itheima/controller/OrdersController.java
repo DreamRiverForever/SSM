@@ -4,6 +4,7 @@ import com.github.pagehelper.PageInfo;
 import com.itheima.domain.Orders;
 import com.itheima.service.IOrdersService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.parameters.P;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +32,8 @@ public class OrdersController {
 //    }
 
     @RequestMapping("/findAll.do")
-    public ModelAndView findAll(@RequestParam(name = "page",required = true,defaultValue = "1")int page,@RequestParam(name = "size",required = true,defaultValue = "4")int size){
+    @Secured("ROLE_ADMIN")
+    public ModelAndView findAll(@RequestParam(name = "page",required = true,defaultValue = "1")Integer page,@RequestParam(name = "size",required = true,defaultValue = "4")Integer size){
         ModelAndView modelAndView = new ModelAndView();
         List<Orders> orders = ordersService.findAll(page,size);
         PageInfo pageInfo = new PageInfo(orders);
